@@ -242,7 +242,7 @@ function localgov_base_preprocess_block(&$variables): void {
   // In config, this will default to vertical for new installations, but remain
   // horizontal for existing installations.
   if ($variables['plugin_id'] === 'localgov_guides_contents') {
-    if (theme_get_setting('localgov_base_localgov_guides_vertical_navigation') === TRUE) {
+    if (theme_get_setting('localgov_base_localgov_guides_vertical_navigation') == TRUE) {
       $variables['attributes']['class'][] = 'block-localgov-guides-contents--navigation-vertical';
     }
     else {
